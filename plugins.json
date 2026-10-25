@@ -1,0 +1,24 @@
+{
+  "npm": [
+    {
+      "name": "@plannotator/pi-extension",
+      "version": "0.25.1",
+      "enabled": true,
+      "install": "omp plugin install @plannotator/pi-extension@0.25.1"
+    },
+    {
+      "name": "@ramarivera/coding-buddy",
+      "version": "0.9.4",
+      "enabled": true,
+      "install": "omp plugin install @ramarivera/coding-buddy@0.9.4"
+    }
+  ],
+  "marketplace": [
+    {
+      "id": "plannotator@plannotator",
+      "version": "0.25.1",
+      "scope": "user",
+      "install": "omp plugin install plannotator@plannotator"
+    }
+  ]
+}

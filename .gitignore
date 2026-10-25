@@ -1,0 +1,19 @@
+# Credentials and environment files
+.env
+.env.*
+!.env.example
+*credentials*
+*secret*
+*token*
+
+# OMP runtime and local state
+agent.db*
+models.db*
+history.db*
+sessions/
+blobs/
+cache/
+plugins/
+
+# OS/editor noise
+.DS_Store

@@ -1,0 +1,64 @@
+{
+  "$schema": "https://raw.githubusercontent.com/can1357/oh-my-pi/main/packages/coding-agent/src/config/mcp-schema.json",
+  "mcpServers": {
+    "obsidian": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "@bitbonsai/mcpvault@latest",
+        "${OBSIDIAN_VAULT_PATH}/OMP"
+      ]
+    },
+    "figma_desktop": {
+      "type": "http",
+      "url": "http://127.0.0.1:3845/mcp"
+    },
+    "xcode": {
+      "type": "stdio",
+      "command": "xcrun",
+      "args": [
+        "mcpbridge"
+      ],
+      "enabled": true
+    },
+    "codegraph": {
+      "type": "stdio",
+      "command": "codegraph",
+      "args": [
+        "serve",
+        "--mcp"
+      ]
+    },
+    "computer_use": {
+      "type": "stdio",
+      "command": "open-computer-use",
+      "args": [
+        "mcp"
+      ],
+      "enabled": false
+    },
+    "sonarqube": {
+      "type": "stdio",
+      "command": "sonar",
+      "args": [
+        "run",
+        "mcp",
+        "--read-only"
+      ],
+      "timeout": 120000,
+      "enabled": true
+    },
+    "playwright": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "@playwright/mcp@latest"
+      ],
+      "enabled": true
+    }
+  },
+  "disabledServers": [
+    "argent",
+    "openaiDeveloperDocs"
+  ]
+}

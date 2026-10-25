@@ -1,0 +1,70 @@
+modelRoles:
+  image: google-antigravity/gemini-3-pro-image
+  default: openai-codex/gpt-6-luna:high
+symbolPreset: nerd
+theme:
+  dark: dark-abyss
+setupVersion: 2
+terminal:
+  showProgress: true
+disabledProviders:
+  - codex
+  - claude
+  - gemini
+  - opencode
+dev:
+  autoqaConsent: granted
+memory:
+  backend: "off"
+readLineNumbers: true
+read:
+  renderMarkdown: true
+  toolResultPreview: true
+defaultThinkingLevel: auto
+colorBlindMode: true
+display:
+  showTokenUsage: false
+  subagentLivePreview: false
+vault:
+  enabled: false
+exa:
+  enabled: true
+composer:
+  shape: claude
+statusLine:
+  preset: default
+steeringMode: one-at-a-time
+treeFilterMode: default
+error:
+  notify: "on"
+disabledExtensions: []
+codexResets:
+  autoRedeem: "yes"
+extendedContext: false
+tui:
+  codexResetFireworks: true
+tools:
+  approvalMode: yolo
+edit:
+  mode: hashline
+task:
+  eager: preferred
+live:
+  voice: ember
+speech:
+  enabled: false
+  enhanced: false
+  voice: af_heart
+hideThinkingBlock: false
+generate_image:
+  enabled: true
+retry:
+  fallbackChains:
+    image:
+      - openai/gpt-image-2
+      - openai-codex/gpt-image-2
+      - xai/grok-imagine-image
+      - xai-oauth/grok-imagine-image
+      - openrouter/google/gemini-3-pro-image
+      - google/gemini-3-pro-image
+      - deepinfra/black-forest-labs/FLUX-2-pro
