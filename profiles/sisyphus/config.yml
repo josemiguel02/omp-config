@@ -1,0 +1,83 @@
+modelRoles:
+  default: "@orchestrator"
+  orchestrator: openai-codex/gpt-5.6-sol:medium
+  coding: openai-codex/gpt-5.6-terra:high
+  fast_worker: openai-codex/gpt-5.6-luna:low
+  research: openai-codex/gpt-5.6-luna:high
+  review: openai-codex/gpt-5.6-sol:medium
+  writing: openai-codex/gpt-5.6-luna:medium
+  advisor: openai-codex/gpt-5.6-sol:medium
+symbolPreset: nerd
+theme:
+  dark: dark-abyss
+setupVersion: 2
+terminal:
+  showProgress: true
+disabledProviders:
+  - codex
+  - claude
+  - gemini
+  - opencode
+dev:
+  autoqaConsent: granted
+memory:
+  backend: "off"
+readLineNumbers: true
+read:
+  renderMarkdown: true
+  toolResultPreview: true
+defaultThinkingLevel: auto
+colorBlindMode: true
+display:
+  showTokenUsage: false
+vault:
+  enabled: false
+providers:
+  imageOrder:
+    - antigravity
+exa:
+  enabled: true
+composer:
+  shape: claude
+statusLine:
+  preset: default
+steeringMode: one-at-a-time
+treeFilterMode: default
+error:
+  notify: "on"
+disabledExtensions:
+  []
+codexResets:
+  autoRedeem: "yes"
+extendedContext: false
+tui:
+  codexResetFireworks: true
+tools:
+  approvalMode: yolo
+edit:
+  mode: hashline
+task:
+  eager: preferred
+  batch: true
+  enableLsp: true
+  maxConcurrency: 6
+  maxRecursionDepth: 2
+  agentIdleTtlMs: 420000
+  softRequestBudget: 200
+  agentModelOverrides:
+    coder: "@coding"
+    scout: "@fast_worker"
+    security-reviewer: "@review"
+    sonic: "@fast_worker"
+    task: "@coding"
+live:
+  voice: ember
+tts:
+  localModel: kokoro
+speech:
+  enabled: false
+  enhanced: false
+  voice: af_heart
+hideThinkingBlock: false
+generate_image:
+  enabled: true
